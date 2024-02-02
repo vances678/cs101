@@ -109,7 +109,7 @@ void search(string** data, int numRows, int numCols, string colName, string valu
         string** foundRows = new string*[numRows];
         foundRows[0] = data[0];
         int numFoundRows = 1;
-        for (int r = 0; r < numRows; r++) {
+        for (int r = 1; r < numRows; r++) {
             if (colName == "*") {
                 for (int c = 0; c < numCols; c++) {
                     if (data[r][c] == value) {
